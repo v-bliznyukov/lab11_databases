@@ -18,7 +18,7 @@ db.restaurants.find({ $or: [ {"name" : { $regex : /^Wil/ } }, {"cuisine": { $nin
 
 5--
 
-db.restaurants.find({"name" : { $regex : /mon/ } },{"name":1,"longitute":1,"attitude":1, "borough":1, "cuisine":1})
+db.restaurants.find({"name" : { $regex : /mon/ } },{"name":1,"address.coord":1, "borough":1, "cuisine":1})
 
 6--
 
